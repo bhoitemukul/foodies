@@ -1,0 +1,273 @@
+.slider-container {
+  height: auto;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: auto;
+  z-index: 999;
+  scroll-snap-type: x mandatory;
+}
+
+.slide1 {
+  height: 140px;
+  width: 80%;
+  padding: 2.5%;
+  display: inline-block;
+  background-image: linear-gradient(120deg, #3f4ed0, #2a359f, #b3dee5);
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: all 0.5s ease-in-out;
+  scroll-snap-align: center;
+}
+
+.slide1:hover .slide-image {
+  transform: rotate(-45deg);
+  width: 41%;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide1:hover .slide-content {
+  width: 60%;
+  transition: all 0.25s ease-in-out;
+}
+
+.slide1 :hover .slide-item-price {
+  display: inline-block;
+}
+
+.slide1 :hover .slide-btn {
+  display: inline-block;
+}
+
+.slide1 :hover .slide-description {
+  display: block;
+}
+
+.slide-content {
+  height: 100%;
+  width: 80%;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.tag {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.slide-image {
+  width: 22%;
+  margin: 20px 0;
+  overflow: hidden;
+  height: 80%;
+  display: inline-block;
+}
+
+.slide-image img {
+  height: 100%;
+}
+
+#tray {
+  position: fixed;
+  bottom: 1.5%;
+  left: 0.5%;
+  transition: all 0.5s ease-in-out;
+  width: 94%;
+  height: 0%;
+  font-size: 2.5em;
+  background-image: linear-gradient(120deg, #3f4ed0, #b3dee5);
+  z-index: 10000;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tray-image-container {
+  height: 28%;
+  width: 60%;
+  align-self: center;
+}
+
+.tray-image-container img {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.5));
+}
+
+.closs-tag img {
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+
+.closs-tag {
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 100px;
+  transform: rotate(270deg);
+}
+
+.addon-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.content-container {
+  width: 90%;
+  padding: 2.5%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.addon-content {
+  height: 40px;
+  width: 40px;
+  margin: 5px 5px;
+  border-radius: 50%;
+  border: 0.5px black solid;
+  padding: 10px;
+  background-color: white;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.2));
+}
+
+.addon-content svg {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.2));
+}
+
+.tray-image-subcontainer1 {
+  display: none;
+  position: absolute;
+  top: 11%;
+  right: 95px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  height: 28%;
+  width: 55%;
+  align-self: center;
+}
+
+.tray-image-subcontainer2 {
+  display: none;
+  position: absolute;
+  top: 11%;
+  right: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  height: 28%;
+  width: 55%;
+  align-self: center;
+}
+
+.addon-images {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  animation: anim ease-in-out 0.5s;
+  transition: all 5s;
+}
+
+.addon-images img {
+  height: 100%;
+  width: 100%;
+}
+
+.item-tag {
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+  margin: 10px 0 0;
+  font-weight: 600;
+  color: white;
+}
+
+.price-tag {
+  width: 100%;
+  height: 50px;
+  text-align: end;
+  float: right;
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: white;
+}
+
+.slide-item-price {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: white;
+  display: none;
+}
+
+.item-description {
+  height: auto;
+  width: 100%;
+  text-align: justify;
+  font-size: 18px;
+  color: white;
+}
+
+.slide-description {
+  height: auto;
+  width: 100%;
+  text-align: justify;
+  font-size: 12px;
+  color: white;
+  white-space: normal;
+  display: none;
+}
+
+.slide-btn {
+  width: 70px;
+  padding: 2.5%;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  display: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes anim {
+  from {
+    transform: scale(5, 5);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.under-line {
+  height: 5px;
+  width: 70px;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #0a1684, #b3dee5);
+  display: block;
+  filter: drop-shadow(5px 6px 4px rgba(10, 22, 132, 0.3));
+  margin: 10px auto 20px;
+}

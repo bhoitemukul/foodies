@@ -1,0 +1,72 @@
+.footer-main-container {
+  height: 300px;
+  width: 90%;
+  padding: 5%;
+  background-image: linear-gradient(120deg, #0a1684, #b3dee5);
+}
+
+.footer-sub-container-1 {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-right: 1px white solid;
+}
+
+.footer-sub-container-2 {
+  width: 79%;
+  height: 100%;
+  display: inline-block;
+}
+
+.contact-row {
+  height: 80px;
+  width: 90%;
+  border-bottom: 1px white solid;
+  padding: 5%;
+}
+
+.contact-row-content {
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+.main-tag {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 15px;
+}
+
+.footer-media-container {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.footer-media-container svg {
+  height: 100%;
+  width: 100%;
+}
+/* .chat {
+  background-color: red;
+  padding: 12px 16px;
+  border-radius: 50rem;
+  border-bottom-right-radius: 0%;
+  position: relative;
+}
+
+.chat ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 20px;
+  height: 10px;
+  background-color: red;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+} */

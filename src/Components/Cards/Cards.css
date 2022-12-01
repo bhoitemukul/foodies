@@ -1,0 +1,211 @@
+.cards-main-container {
+  height: 200px;
+  padding: 5%;
+  display: flex;
+}
+
+.cards-sub-container {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-sub-container2 {
+  width: 70%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card.active {
+  opacity: 1;
+  animation: fronte 0.3s linear;
+  z-index: 1;
+  transition: all 1s cubic-bezier(0, 0.77, 0.2, -0.23);
+  animation: display 0.2s linear;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes display {
+  0% {
+    z-index: 0;
+    opacity: 0.5;
+  }
+  25% {
+    z-index: 0.3;
+    opacity: 0.6;
+  }
+  50% {
+    z-index: 0.5;
+    opacity: 0.7;
+  }
+  75% {
+    z-index: 0.7;
+    opacity: 0.8;
+  }
+  85% {
+    z-index: 0.7;
+    opacity: 0.9;
+  }
+  100% {
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes fronte {
+  from {
+    z-index: 0.6;
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+.card1 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 1;
+}
+
+.card2 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 0;
+  /* background-color: red; */
+}
+
+.card3 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 0;
+}
+
+.card4 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 0;
+}
+
+.card5 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 0;
+}
+
+.card6 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* background-image: linear-gradient(120deg, #0a1684, #b3dee5); */
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card6 img {
+  height: 100%;
+  width: 100%;
+}
+
+.cards-sub-container2 .card.active:nth-child(1n + 0) {
+  /* transform: rotate(7deg); */
+  box-shadow: 2px 0px 20px #dee1ec;
+  transition: all 0.5s ease-out;
+}
+
+.cards-sub-container2 :nth-child(2n + 0) {
+  box-shadow: 2px 0px 20px #dee1ec;
+  transform: rotate(-7deg);
+  transition: all 0.5s ease-out;
+}
+
+.cards-sub-container2 :nth-child(3n + 0) {
+  box-shadow: 2px 0px 20px #dee1ec;
+  transform: rotate(-3deg);
+  transition: all 0.5s ease-out;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(120deg, #0a1684, #b3dee5);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.btn img {
+  height: 80%;
+  width: 80%;
+  padding: 10%;
+}
+
+#d1 {
+  z-index: 0;
+}
+
+#d2 {
+  z-index: 0;
+}
+
+#d3 {
+  z-index: 0;
+}
+
+#d4 {
+  z-index: 0;
+}
+
+#d5 {
+  z-index: 0;
+}
+
+#d6 {
+  z-index: 0;
+}
+
+.under-line {
+  height: 5px;
+  width: 70px;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #0a1684, #b3dee5);
+  display: block;
+  filter: drop-shadow(5px 6px 4px rgba(10, 22, 132, 0.3));
+  margin: 10px auto 20px;
+}
