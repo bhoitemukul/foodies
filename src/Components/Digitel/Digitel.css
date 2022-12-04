@@ -3,6 +3,7 @@
   width: 100%;
   background-color: black;
   overflow: hidden;
+  position: relative;
 }
 
 .main-new-container {
@@ -37,12 +38,14 @@
 .offers-btn {
   width: 100px;
   text-align: center;
-  /* margin: 0 auto; */
   border: 2px solid white;
   border-radius: 10px;
   padding: 10px;
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.3));
   color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
 }
 
 .digitel-content-container {
@@ -58,21 +61,20 @@
 }
 
 .digitel-new-container {
-  height: 60%;
+  height: 85%;
   padding: 0 5%;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-image: radial-gradient(
-    farthest-side at -82% 51%,
+    farthest-side at -53% 50%,
     transparent,
     transparent,
     #ffff12,
-    #e8e826
+    transparent
   );
   border-radius: 470% 0% 0px 500%;
   transform: rotate(27deg);
-  width: 80%;
+  width: 110%;
   /* opacity: 0.6; */
 }
 
