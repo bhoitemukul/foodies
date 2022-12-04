@@ -5,7 +5,7 @@
 }
 
 .cards-sub-container {
-  width: 15%;
+  width: 10%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .cards-sub-container2 {
-  width: 70%;
+  width: 80%;
   position: relative;
   height: 100%;
   display: flex;
@@ -163,7 +163,6 @@
 }
 
 .btn {
-  height: 50px;
   width: 50px;
   background-image: linear-gradient(120deg, #0a1684, #b3dee5);
   border-radius: 50%;
